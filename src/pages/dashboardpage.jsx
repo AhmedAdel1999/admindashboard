@@ -96,8 +96,8 @@ const DashboardPage = () =>{
 
 
             <Grid container spacing={1.3} sx={{overflowX:"auto"}} mt={1.3}>
-                <Grid item xs={12} md={8}>
-                    <Paper sx={{ maxWidth: 900, flexGrow: 1, minWidth: "500px"}}>
+                <Grid item xs={12} lg={9}>
+                    <Paper className="grow xs:min-w-[650px] md:min-w-[350px]">
                         <Stack
                         alignItems={"center"}
                         direction={"row"}
@@ -131,14 +131,14 @@ const DashboardPage = () =>{
                     </Paper>
                 </Grid>
 
-                <Grid item xs={12} md={4}>
+                <Grid item xs={12} lg={3}>
                     <Box
+                        className="xs:min-w-[650px] md:min-w-[350px]"
                         sx={{
                         overflow: "auto",
                         borderRadius: "4px",
                         minWidth: "280px",
                         maxHeight: 355,
-                        minWidth:"500px",
                         flexGrow: 1,
                         }}
                     >
