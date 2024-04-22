@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components{
+    .inputstyle{
+        @apply p-3 border-b-[2px] dark:border-b-[2px] border-[#ccc] rounded-lg dark:text-white bg-[#f5f5f5] dark:bg-[#2b2b2b] placeholder:font-bold outline-none
+    }
+}
+
+
+::-webkit-scrollbar{
+    height: 7px;
+    width:7px;
+    display: block;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #9c27b0;
+    border-radius: 5px;
+}
+
+.dark .MuiPaper-root{
+    background-color:rgb(18, 18, 18) !important;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.09)) !important;
+    color:#fff !important
+}
+.dark .MuiDivider-root{
+    border-color:rgba(255, 255, 255, 0.12)
+}
+.dark .MuiAccordionSummary-root svg{
+    color:#fff !important
+}
